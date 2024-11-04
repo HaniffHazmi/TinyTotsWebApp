@@ -26,7 +26,7 @@ namespace TinyTotsWebApp
         }
 
         //Handle delete operation
-        protected void gvRegistrations_RowDeleting(object sender, GridViewRowEventArgs e)
+        protected void gvRegistrations_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             //int registerationId = Convert.ToInt32(gvRegistrations.DataKeys[e.RowIndex].Value);
             int registerationId = (int)e.Keys["RegistrationId"];//Assuming Registration Id is an int.
