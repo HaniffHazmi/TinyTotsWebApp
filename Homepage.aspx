@@ -4,16 +4,48 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Kindergarten Redistration Form</title>
+    <style>
+        .green-title{
+            color:green;
+        }
+
+        .form-element{
+            margin-bottom:10px;
+        }
+
+        .nav-menu{
+            background-color:#f1f1f1;
+            padding: 10px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-menu a:hover{
+            color:green;
+        }
+
+        .grid-container{
+            display:flex;
+            justify-content:center;
+        }
+
+        .grid-container .gridview-style {
+            width: 80%; /* Set a desired width, adjust as necessary */
+        }
+
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <%Response.Write("Welcome to TinyTots Kindergarten"); %> <br />
-            <%Response.Write("Description of your web."); %>
-        </div>
+    <form id="form1" runat="server" class="form-container">
 
-        <asp:Label ID="MyLabel" runat="server" Text="Time and date will be displayed here"></asp:Label>
+        
 
         <h2 style="color:green">Kindergarten Registration Form</h2>
         <asp:Label ID="Label1" runat="server" Text="First Name: "></asp:Label>
@@ -42,6 +74,8 @@
         </asp:CheckBoxList><br />
 
         <asp:Button ID="Button1" runat="server" Text="Submit" />
+        <br />
+        <asp:Label ID="MyLabel" runat="server" Text="Time and date will be displayed here"></asp:Label>
     </form>
 </body>
 </html>
