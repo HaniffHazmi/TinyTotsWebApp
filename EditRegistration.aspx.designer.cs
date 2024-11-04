@@ -11,7 +11,7 @@ namespace TinyTotsWebApp
 {
 
 
-    public partial class Home_Page
+    public partial class EditRegistration
     {
 
         /// <summary>
@@ -42,15 +42,6 @@ namespace TinyTotsWebApp
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
 
         /// <summary>
-        /// txtSecondName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSecondName;
-
-        /// <summary>
         /// ddlRace control.
         /// </summary>
         /// <remarks>
@@ -78,21 +69,12 @@ namespace TinyTotsWebApp
         protected global::System.Web.UI.WebControls.CheckBoxList cblAllergies;
 
         /// <summary>
-        /// btnRegister control.
+        /// btnEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
-
-        /// <summary>
-        /// MyLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label MyLabel;
+        protected global::System.Web.UI.WebControls.Button btnEdit;
     }
 }

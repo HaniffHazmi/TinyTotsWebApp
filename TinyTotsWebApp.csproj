@@ -74,21 +74,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EditRegistration.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Homepage.aspx" />
     <Content Include="RegisterChild.aspx" />
+    <Content Include="RegistrationList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditRegistration.aspx.cs">
+      <DependentUpon>EditRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditRegistration.aspx.designer.cs">
+      <DependentUpon>EditRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Homepage.aspx.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
+    <Compile Include="RegisterChild.aspx.cs">
+      <DependentUpon>RegisterChild.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
+    <Compile Include="RegisterChild.aspx.designer.cs">
+      <DependentUpon>RegisterChild.aspx</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202411041224486_InitialMigration.cs" />
     <Compile Include="Migrations\202411041224486_InitialMigration.Designer.cs">
@@ -98,12 +106,12 @@
     <Compile Include="Models\TinyTotsDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\TinyTots.cs" />
-    <Compile Include="RegisterChild.aspx.cs">
-      <DependentUpon>RegisterChild.aspx</DependentUpon>
+    <Compile Include="RegistrationList.aspx.cs">
+      <DependentUpon>RegistrationList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterChild.aspx.designer.cs">
-      <DependentUpon>RegisterChild.aspx</DependentUpon>
+    <Compile Include="RegistrationList.aspx.designer.cs">
+      <DependentUpon>RegistrationList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
