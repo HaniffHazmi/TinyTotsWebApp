@@ -50,7 +50,6 @@ namespace TinyTotsWebApp
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSecondName;
 
-
         /// <summary>
         /// ddlRace control.
         /// </summary>

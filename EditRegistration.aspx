@@ -42,7 +42,8 @@
 
  .grid-container .gridview-style {
  width: 80%; /* Set a desired width, adjust as necessary */
- }
+ }
+
     </style>
 </head>
 <body>
@@ -57,7 +58,7 @@
             <label for="txtFirstName">First Name:</label>
             <asp:TextBox ID="txtFirstName" runat="server" placeholder="First Name" CssClass="formelement"></asp:TextBox><br />
             <label for="txtSecondName">Second Name:</label>
-            <asp:TextBox ID="txtSecondName" runat="server" placeholder="Second Name"CssClass="form-element"></asp:TextBox><br />
+            <asp:TextBox ID="txtSecondName" runat="server" placeholder="Second Name" CssClass="form-element"></asp:TextBox><br />
             <label for="ddlRace">Race:</label>
             <asp:DropDownList ID="ddlRace" runat="server" CssClass="form-element">
             <asp:ListItem>Select</asp:ListItem>
