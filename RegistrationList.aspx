@@ -54,8 +54,7 @@ Inherits="TinyTotsWebApp.RegistrationList" %>
  <div>
  <h1 class="green-title">Registration List</h1>
  <div class="grid-container">
- <asp:GridView ID="gvRegistrations" runat="server" AutoGenerateColumns="False"
-DataKeyNames="RegistrationId" EmptyDataText="No registrations found." >
+ <asp:GridView ID="gvRegistrations" runat="server" AutoGenerateColumns="False" DataKeyNames="RegistrationId" EmptyDataText="No registrations found." OnRowDeleting="gvRegistrations_RowDeleting">
  <Columns>
      <asp:BoundField DataField="FirstName" HeaderText="First Name" />
      <asp:BoundField DataField="SecondName" HeaderText="Second Name" />
@@ -63,6 +62,7 @@ DataKeyNames="RegistrationId" EmptyDataText="No registrations found." >
      <asp:BoundField DataField="Gender" HeaderText="Gender" />
      <asp:BoundField DataField="FoodAllergies" HeaderText="Food Allergies" />
      <asp:HyperLinkField Text="Edit" DataNavigateUrlFields="RegistrationId" DataNavigateUrlFormatString="EditRegistration.aspx?RegistrationId={0}" />
+     <asp:CommandField ShowDeleteButton="true" />
  </Columns>
  </asp:GridView>
  </div>
